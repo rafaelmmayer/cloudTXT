@@ -50,7 +50,7 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 
 <h3>Link da aplicação web</h3>
 
-> https://certificates-for-everyone-womakerscode.netlify.app/
+> Heroku: https://cloud-txt.herokuapp.com/
 
 <br/>
 
@@ -62,13 +62,15 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 
 ## Pré-requisitos
 
-:warning: [VS Code](https://code.visualstudio.com/)
+:zap: [VS Code](https://code.visualstudio.com/)
 
-:warning: [Visual Studio](https://visualstudio.microsoft.com/pt-br/)
+:zap: [Visual Studio](https://visualstudio.microsoft.com/pt-br/)
 
-:warning: [Node](https://nodejs.org/en/download/) (Web)
+:zap: [Node](https://nodejs.org/en/download/) (Web)
 
-:warning: [.NET Framework](https://dotnet.microsoft.com/download) (WPF)
+:zap: [.NET Framework](https://dotnet.microsoft.com/download) (WPF)
+
+:zap: [Git](https://git-scm.com/)
 
 ## Como rodar a aplicação :arrow_forward:
 
