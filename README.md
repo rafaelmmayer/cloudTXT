@@ -60,7 +60,7 @@
 
 :zap: [Visual Studio](https://visualstudio.microsoft.com/pt-br/)
 
-:zap: [Node](https://nodejs.org/en/download/) (Web)
+:zap: [Node](https://nodejs.org/en/download/)
 
 :zap: [.NET 5](https://dotnet.microsoft.com/download)
 
