@@ -3,12 +3,9 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const mongoose = require('mongoose')
 const Arquivos = require('./data/dataAccess.js')
-var port = process.env.PORT || 5000
+require('dotenv').config()
 
-if(process.env.NODE_ENV !== 'production'){
-    const dotenv = require('dotenv')
-    dotenv.config()
-}
+const port = process.env.PORT
 
 const app = express()
 app.use(cors())
