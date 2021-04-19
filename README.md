@@ -143,6 +143,8 @@ Para qualquer pessoa que queira uma aplicação simples para armazenar e acessar
 
 :memo: Página para upload de Arquivo de texto
 
+:memo: Criação de um aplicativo que salve os arquivos no banco
+
 ## Licença
 
 The [MIT License]() (MIT)
