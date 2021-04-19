@@ -23,7 +23,7 @@ export default {
     }
   },
   created() {
-    this.$http.get("https://cloud-txt.herokuapp.com/api")
+    this.$http.get("http://localhost:5000/api")
       .then(res => res.json())
       .then(json => this.arquivos = json)
   },
