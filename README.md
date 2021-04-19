@@ -139,8 +139,6 @@ Para qualquer pessoa que queira uma aplicação simples para armazenar e acessar
 ## Linguagens, dependencias e libs utilizadas :books:
 
 - [Node](https://nodejs.org/en/)
-- [C#](https://docs.microsoft.com/pt-br/dotnet/csharp/)
-- [Vue.js](https://vuejs.org/)
 - [MongoDB](https://www.mongodb.com/2)
 - [Bootstrap](https://getbootstrap.com/)
 - [Material Design In XAML](http://materialdesigninxaml.net/)
