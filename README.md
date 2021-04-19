@@ -68,8 +68,6 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 
 :warning: [Node](https://nodejs.org/en/download/) (Web)
 
-:warning: [.NET 5](https://dotnet.microsoft.com/download) (Console)
-
 :warning: [.NET Framework](https://dotnet.microsoft.com/download) (WPF)
 
 ## Como rodar a aplicação :arrow_forward:
