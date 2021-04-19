@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApp.Models
+namespace ClassLibrary.Models
 {
     public class Arquivo
     {
         public string Id { get; set; }
-        public string Nome { get; set; }
-        public string Conteudo { get; set; }
+        public string nome { get; set; }
+        public string conteudo { get; set; }
     }
 }

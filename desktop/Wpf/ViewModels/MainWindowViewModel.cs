@@ -1,21 +1,18 @@
-﻿using MvvmHelpers;
+﻿using ClassLibrary.Api;
+using ClassLibrary.Models;
+using MvvmHelpers;
 using MvvmHelpers.Commands;
 using Ookii.Dialogs.Wpf;
-using RestSharp;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
-using WpfApp.Models;
 
-namespace WpfApp.ViewModels
+namespace Wpf.ViewModels
 {
     public class MainWindowViewModel : BaseViewModel
     {
+        ArquivoApi api = new ArquivoApi();
+
         private Arquivo _selectedItem;
         public Arquivo SelectedItem
         {
@@ -44,10 +41,8 @@ namespace WpfApp.ViewModels
 
         async void GetArquivoAsync()
         {
-            var client = new RestClient("https://projeto-pf.herokuapp.com/");
-            var request = new RestRequest("api", DataFormat.Json);
-            var response = await client.GetAsync<List<Arquivo>>(request);
-            Arquivos = new ObservableCollection<Arquivo>(response);
+            var arquivos = await api.GetArquivos();
+            Arquivos = new ObservableCollection<Arquivo>(arquivos);
         }
 
         void DownloadArquivo()
@@ -60,12 +55,12 @@ namespace WpfApp.ViewModels
                 CheckFileExists = true,
                 Filter = @"txt files (*.txt)|*.txt|All files (*.*)|*.*"
             };
-            vsf.FileName = SelectedItem.Nome;
-            if(vsf.ShowDialog() == true)
+            vsf.FileName = SelectedItem.nome;
+            if (vsf.ShowDialog() == true)
             {
-                using(StreamWriter sw = new StreamWriter($"{vsf.FileName}.txt"))
+                using (StreamWriter sw = new StreamWriter($"{vsf.FileName}.txt"))
                 {
-                    sw.Write(SelectedItem.Conteudo);
+                    sw.Write(SelectedItem.conteudo);
                 }
             }
 
@@ -73,11 +68,7 @@ namespace WpfApp.ViewModels
 
         async void DeleteArquivo()
         {
-            if (SelectedItem is null) return;
-
-            var client = new RestClient("https://projeto-pf.herokuapp.com/");
-            var request = new RestRequest($"api/{SelectedItem.Id}", DataFormat.Json);
-            await client.DeleteAsync<Arquivo>(request);
+            await api.DeleteArquivo(SelectedItem);
             GetArquivoAsync();
         }
     }
