@@ -62,7 +62,7 @@
 
 :zap: [Node](https://nodejs.org/en/download/) (Web)
 
-:zap: [.NET 5](https://dotnet.microsoft.com/download) (WPF)
+:zap: [.NET 5](https://dotnet.microsoft.com/download)
 
 :zap: [Git](https://git-scm.com/)
 
