@@ -96,7 +96,7 @@ npm i
 
 Renomeia .dev.env para .env
 
-Preencha CONNECTION_STRING com uma conexao com um conexão com um banco Mongo
+Preencha CONNECTION_STRING com uma conexão com um banco MongoDB
 
 ```
 npm start
