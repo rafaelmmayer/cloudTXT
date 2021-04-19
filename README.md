@@ -24,10 +24,6 @@
 
 :small_blue_diamond: [Licença](#licença)
 
-...
-
-Insira os tópicos do README em links para facilitar a navegação do leitor
-
 ## Descrição do projeto
 
 <p align="justify">
@@ -36,13 +32,11 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 
 ## Funcionalidades
 
-:heavy_check_mark: Monitoramento de uma pasta específica para salvar os arquivos no banco
+:heavy_check_mark: Visualização dos arquivos
 
-:heavy_check_mark: Visualização do conteúdo
+:heavy_check_mark: Download dos arquivos
 
-:heavy_check_mark: Download dos arquivos na nuvem
-
-:heavy_check_mark: Deletar os arquivos na nuvem
+:heavy_check_mark: Deletar os arquivos
 
 ## Layout ou Deploy da Aplicação :dash:
 
@@ -148,6 +142,8 @@ Para qualquer pessoa que queira uma aplicação simples para armazenar e acessar
 :memo: Página de registro pessoal
 
 :memo: Página para upload de Arquivo de texto
+
+:memo: Criação de um aplicativo que salve os arquivos no banco
 
 ## Licença
 
