@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Slogan titulo="Projeto Prática de Formação B" info="Dashboard criado para download de arquivos armazenados na nuvem (MongoDb)"/>    
+    <Slogan titulo="Cloud TXT" info="Dashboard criado para download de arquivos armazenados na nuvem (MongoDb)"/>    
     <ListFiles :arquivos="arquivos"/>
   </div>
 </template>
