@@ -60,9 +60,9 @@
 
 :zap: [Visual Studio](https://visualstudio.microsoft.com/pt-br/)
 
-:zap: [Node](https://nodejs.org/en/download/) (Web)
+:zap: [Node](https://nodejs.org/en/download/)
 
-:zap: [.NET Framework](https://dotnet.microsoft.com/download) (WPF)
+:zap: [.NET 5](https://dotnet.microsoft.com/download)
 
 :zap: [Git](https://git-scm.com/)
 
@@ -96,7 +96,7 @@ npm i
 
 Renomeia .dev.env para .env
 
-Preencha CONNECTION_STRING com uma conexao com um conexão com um banco Mongo
+Preencha CONNECTION_STRING com uma conexão com um banco MongoDB
 
 ```
 npm start
