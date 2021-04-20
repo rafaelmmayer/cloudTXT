@@ -30,11 +30,13 @@ namespace Wpf.ViewModels
 
         public ICommand DownloadArquivoCommand { get; set; }
         public ICommand DeleteArquivoCommand { get; set; }
+        public ICommand GetArquivosCommand { get; set; }
 
         public MainWindowViewModel()
         {
             DownloadArquivoCommand = new Command(DownloadArquivo);
             DeleteArquivoCommand = new Command(DeleteArquivo);
+            GetArquivosCommand = new Command(GetArquivoAsync);
 
             GetArquivoAsync();
         }

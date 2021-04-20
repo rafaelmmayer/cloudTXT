@@ -3,6 +3,7 @@ using ClassLibrary.Models;
 using System;
 using System.Configuration;
 using System.IO;
+using System.Threading;
 
 namespace ConsoleApp
 {
@@ -13,6 +14,8 @@ namespace ConsoleApp
             Console.CancelKeyPress += delegate {
                 Environment.Exit(0);
             };
+
+            Console.WriteLine("<------Monitoramente Cloud TXT----->\n");
 
             var path = ConfigurationManager.AppSettings.Get("Path");
             ArquivoApi api = new ArquivoApi();
@@ -38,7 +41,9 @@ namespace ConsoleApp
                     {
                         Console.WriteLine(ex.Message);
                     }
-                } 
+                }
+
+                Thread.Sleep(1000);
             }
 
         }
